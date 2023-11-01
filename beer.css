@@ -1,0 +1,67 @@
+*{
+    margin: 0px;
+}
+ .boss{
+    height: 350px;
+    left: 1850px;
+    position: relative;
+     
+}
+.TITLE{
+    font-size: 70px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: brown;
+    text-align: center;
+}
+.head{
+    background-color: rgb(179, 233, 233);
+}
+.contents{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.beers img{
+    height:650px ;
+    width: 650px;
+    /* border: 1px black solid; */
+    margin-top: 0px;
+    margin-left: 10PX;
+    transform: 2s;
+    border-radius: 50%;
+}
+.B{
+    font-style: italic;
+    font-size: 50PX;
+    font-weight: 800;
+}
+.beers h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.beers img:hover{
+   transform: scale(1.1) ;
+   border-radius: 0;
+   
+}
+.beers h3,h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 200;
+
+}
+.sen h1{
+    font-size: 40px;
+    margin-top: 30px;
+}
+.sen h2{
+    font-size: 40px;
+    margin-top: 30px;
+
+}
+.sen h3{
+    font-size: 30px;
+    margin-top: 30px;
+}

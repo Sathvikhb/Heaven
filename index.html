@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="shortcut icon" href="poool.jpeg">
+    
+    <title>liquar</title>
+    <style>
+         body{
+        /* background-color: rgb(48, 25, 221); */
+        background: linear-gradient(purple ,yellow ,green,blue);
+      }
+      *{
+        margin: 0px;
+      }
+        nav{
+            height: 60px;
+            width: 100%;
+            background-color:rgb(1, 10, 19);
+            backdrop-filter: blur(5px);
+            display: flex;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            z-index: 100;
+        }
+        .navlogo img{
+            height: 60px;
+            width: 80px;
+            margin: 7px 0px 7px 5px  ;
+        }
+       .nav-items{
+        word-spacing: 50px;
+     
+       }
+      .nav-items a{
+        text-decoration: none;
+        font-size: 22px;
+        padding: 15px 5px;
+        color: whitesmoke;
+
+       }
+       
+       nav .nav-items{
+        position: absolute;
+        right: 20px;
+       }
+       .nav-items:hover a{
+        filter: blur(2px);
+       }
+       .nav-items a:hover{
+        color: rgb(255, 51, 0);
+        font-size: 25px;
+        filter: blur(0px);
+       }
+       .nav-items button{
+        
+        border: 3px solid;
+        border-radius: 5px;
+        color: burlywood;
+       }
+      
+       .home img{
+        height: 580px;
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,.1)),url("table.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    width: 100%;
+ 
+       }
+       #coverpage{
+        filter: blur(1.6px);
+  -webkit-filter: blur(1.6px); 
+       }
+       
+       .box h1{
+        color: rgb(255, 166, 0);
+        font-weight:950;
+        position: relative;
+        top: -450px;
+        left: 900px;
+        font-size: 70px;
+        /* text-align: center; */
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       }
+       .box h2{
+        color: rgb(252, 184, 13);
+        font-weight: 950;
+        position: relative;
+        top: -450px;
+        left: 1000px;
+        font-size: 50px;
+        /* text-align: center; */
+        right: 120px;
+       }
+       .box span{
+        color: rgba(233, 35, 17, 0.94);
+        
+       }
+        .box img{
+        position: relative;
+        bottom: 20px;
+       } */
+       
+       #food1{
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        position: relative;
+        top: -350px;
+       }
+       #food2{
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        position: relative;
+        top: -350px;
+        left: 40px;
+       }
+       #food3{
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        position: relative;
+        top: -350px;
+        left: 140px;
+       }
+       #food4{
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        position: relative;
+        top: -350px;
+        left: 200px;
+       }
+       #food5{
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        position: relative;
+        top: -350px;
+        left: 300px;
+       }
+       .home a{
+        position: relative;
+        color: crimson;
+        font-size: 45px;
+        left:0px;
+        top: -220px;
+        font-weight: 700;
+       }
+       .home a:hover{
+        color: blue;
+        text-decoration: none;
+       }
+       .about{
+        height: 300px;
+        width: 100%;
+        margin-top: 50px;
+
+       }
+       .about h1{
+        color: rgb(23, 22, 22);
+        position: relative;
+        top: -270px;
+       }
+       .abtimg .img1{
+        height: 450px;
+        width: 550px;
+        position: relative;
+        top: -230px;
+        
+       }
+       .abtimg .img2{
+        height: 450px;
+        width: 550px;
+        position: relative;
+        top: -230px;
+        left: 50px;
+       }
+       .foodex{
+        height: 400px;
+        width: 800px;
+        color: rgba(17, 16, 16, 0.985);
+        position: relative;
+        top: -750px;
+        left: 1250px;
+       }
+       .foodex h1{
+        position: relative;
+        top: 0px;
+        font-size: 100px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: black;
+        
+       }
+       .foodex p{
+        position: relative;
+        top: 50px;
+        text-align: justify;
+        font-size: 20px;
+       }
+       .foodex h2{
+        position: relative;
+        top: 80px;
+       }
+       .foodex span{
+        color: red;
+        font-size: 55px;
+       }
+       .contactus{
+    height: 700px;
+    width: 100%;
+    background-color: black;
+  }
+  .cont{
+    height: 500px;
+    width: 600px;
+    position: relative;
+    
+  }
+  
+  .cont input{
+    height: 40px;
+    width: 600px;
+    display: block;
+    margin: 50px;
+    font-size: 25px;
+  }
+  .cont h2{
+    position: relative;
+    top: 40px;
+    color: rgb(221, 188, 23);
+    font-size: 45px;
+    
+  }
+  textarea{
+position: relative;
+left: 50px;
+height: 100px;
+    width: 600px;
+    font-size: 20px;
+
+  }
+  .cont button{
+    position: relative;
+    left: 250px;
+    transition: all 1s ease-in;
+    font-size: 25px;
+  }
+  .cont button:hover{
+    color: aqua;
+  }
+  .super img{
+    height: 600px;
+    width: 1000px;
+    position: relative;
+    left: 750px;
+    top: -450px;
+  }
+  .food img{
+            height:250px ;
+            width: 310px;
+            margin: 10px;
+            background-color: black;
+            overflow: hidden;
+            transition: all ease 1s;
+        }
+      
+        .food img:hover{
+    transform: scale(1.2);
+
+  }
+  .food{
+    height: 500px;
+    width: 100%;
+    margin-top: 250px;
+  }
+  .food h1{
+    color: antiquewhite;
+    position: relative;
+  }
+  .food span{
+    color: red;
+  }
+      .last{
+        height: 100px;
+        width: 100%;
+        position: relative;
+        top: 120px;
+        color: aliceblue;
+        word-spacing: 100px;
+        font-size: 40px;
+        margin-left: 180px;
+        
+      }
+        #face:hover{
+            color: blue;
+        }
+        #insta:hover{
+            color: red;
+        }
+        #twit:hover{
+            color: blue;
+        }
+        #snap:hover{
+            color: yellow;
+        }
+        #link:hover{
+            color: blue;
+        }
+        #sky:hover{
+            color: blue;
+        }
+        
+        
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navlogo"><img src="yenne.jpg" alt=""></div>
+        <div class="nav-items">
+            <a href="#home">Home</a>
+            <a href="#abt">About</a>
+            <a href="yenne.html" target="">Menu</a> 
+            <a href="vodka.html">Special</a>
+            <a href="#cont">Contact</a>
+            <a href="tableregistartion.html" style="color:white;"><button>Reservation </button></a>
+        </div>
+        
+        </nav>
+        <!-- homepage starts  -->
+        <div class="home" id="home">
+            <img src="https://images.pexels.com/photos/1089932/pexels-photo-1089932.jpeg?auto=compress&cs=tinysrgb&w=400" alt="" id="coverpage">
+            <div class="box">
+                <h1>HEAVEN
+                   <span>24/7</span> </h1>
+                <h2>Bar </h2>
+       
+      
+        
+          <!-- <img src="https://storage.gotoliquorstore.com/category/7cf6f894-abad-46aa-bc8c-2c494faa6daf.jpg" alt="" id="food1"  > -->
+        <img src="https://storage.gotoliquorstore.com/category/e4aaf743-e9fc-4178-ba05-41a4ee85127b.jpg" alt="" id="food2" >
+        <img src="https://storage.gotoliquorstore.com/category/e4279320-0fc1-4293-b036-d4e4db26dbca.jpg" alt="" id="food3" >
+        <img src="https://storage.gotoliquorstore.com/category/ab1133b8-eb0d-43b6-b627-40f7f6c5e903.jpg" alt="" id="food4" >  
+        <img src="https://storage.gotoliquorstore.com/category/4206befa-27ba-4b61-869d-403d931d4838.jpg" alt="" id="food5" > 
+        <!-- <img src="https://storage.gotoliquorstore.com/category/4206befa-27ba-4b61-869d-403d931d4838.jpg" alt="" id="food5" class="sat"> -->
+        
+        
+         <a href="yenne.html" target="_blank"  class="tap">Tap to view different brands </a> 
+    </div> </div>
+      <!-- homepage ends -->
+      <div class="about" >
+        <h1 id="abt">About Us</h1>
+        <div class="abtimg">
+            <img src="https://media3.giphy.com/media/kfF1ftmFY7oPxoYB2h/200w.webp?cid=ecf05e47bnalpx0wxzbmar06v0k8ltt14ozxi0oa5ne8kc11&ep=v1_gifs_search&rid=200w.webp&ct=g" alt="" class="img1" >
+            <img src="https://media2.giphy.com/media/ignzytUycaaMpqfaO0/200w.webp?cid=ecf05e47u37xpgvvgsccagd65a8pklj1twscqfenxnian8yq&ep=v1_gifs_search&rid=200w.webp&ct=g" alt="" class="img2">
+        </div>
+        <div class="foodex">
+            <h1>HEAVEN<span>24/7</span> </h1>
+            <p>A bar, also known as a saloon, a tavern or tippling house, or sometimes as a pub or club, is a retail business establishment that serves alcoholic beverages, such as beer, wine, liquor, cocktails, and other beverages such as mineral water and soft drinks. Bars often also sell snack foods, such as crisps or peanuts, for consumption on their premises. Some types of bars, such as pubs, may also serve food from a restaurant menu. The term "bar" refers to the countertop where drinks are prepared and served, and by extension to the overall premises.
+
+             </p>
+            <h2></h2>
+        </div>
+      </div>
+      <div class="contactus">
+     
+            <div class="cont">
+            <h2 id="cont"> CONTACT <h2>
+                <input type="textbox" placeholder="FirstName">
+                <input type="textbox" placeholder="LastName">
+                <input type="textbox" placeholder="email" required>
+                <input type="textbox" placeholder="Subject">
+                <textarea name="" id="" cols="30" rows="5" placeholder="Message" ></textarea>
+                <button>send message</button>
+            </div>
+            <div class="super">
+            <img src="https://media2.giphy.com/media/3orife56flNN4ERk6A/giphy.gif" alt=""></div>
+      </div>
+      <div class="food">
+       <h1>HEAVEN <span>24/7</span> Special</h1>
+        <img src="https://images.gotoliquorstore.com/product/1000001766/9ca82db9-9832-403c-9f40-a90f579aa72d_360_m.jpg" alt="">
+        <img src="https://images.gotoliquorstore.com/product/1000001896/0a6bd7fb-19b6-4a21-a813-2506276d7a91_360_m.jpg" alt="">
+        <img src="https://images.gotoliquorstore.com/product/1000022427/e41cb994-f7c4-4bd0-b39e-9fe4ff941b04_360_m.jpg" alt="">
+        <img src="https://images.gotoliquorstore.com/product/1000033799/24b39a83-26c6-4e37-81b0-656fc12ad4a8_360_m.jpg" alt="">
+        <img src="https://images.gotoliquorstore.com/product/1000033848/9f9fdf6f-40d9-448f-b8d0-b7f84664a3cc_360_m.jpg" alt="">
+        <img src="https://images.gotoliquorstore.com/product/1000033840/42d0eae5-4273-4d63-9d2c-3db3134a0a4d_360_m.jpg" alt="">
+        <img src="https://images.gotoliquorstore.com/product/1000007313/a059c4bf-bb7b-46a2-b170-c30062c46ef4_360_m.jpg" alt="">
+        <img src="https://images.gotoliquorstore.com/product/1000024948/fe212763-a0f9-4f99-a175-fbae68c8f936_360_m.jpg" alt="">
+        <img src="https://storage.gotoliquorstore.com/category/0681b4f4-fd7d-4e36-bdd7-f8ecb6837ee7.jpg" alt="">
+        <img src="https://images.gotoliquorstore.com/product/1000000855/61b508dc-47c0-4547-a1ef-b3cc62e5d33f_360_m.jpg" alt="">
+        <img src="https://images.gotoliquorstore.com/product/1000000873/0ab1e3e5-fd3d-4679-be8e-bf679ecdf569_360_m.jpg" alt="">
+        <img src="https://images.gotoliquorstore.com/product/1000003271/bb6eb278-d3d1-4033-96e4-3f86ea98ef29_360_m.jpg" alt="">
+      </div>
+      <div class="last">
+        <i class="fa fa-facebook-square" aria-hidden="true" id="face" ></i>
+        <i class="fa fa-instagram" aria-hidden="true" id="insta"></i>
+        <i class="fa fa-twitter" aria-hidden="true" id="twit"></i>
+        <!-- <i class="fa fa-github-square" aria-hidden="true" ></i> -->
+        <i class="fa fa-snapchat-square" aria-hidden="true" id="snap"></i>
+        <i class="fa fa-linkedin-square" aria-hidden="true" id="link"></i>
+        <i class="fa fa-skype" aria-hidden="true" id="sky"></i>
+
+    </div>
+</body>
+</html>
